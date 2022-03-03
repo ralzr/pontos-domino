@@ -1,14 +1,49 @@
 .container {
-  padding: 0 2rem;
+  padding: 0;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  padding: 0 0 4rem;
   flex: 1;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 4rem;
+}
+
+.player {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  padding: 2rem;
+  min-width: 10rem;
+  border: 1px solid;
+  border-left: none;
+  align-items: center;
+  width: 25%;
+}
+
+.playerImg {
+  display: inline;
+}
+
+.player:first-child {
+  border-left: 1px solid;
+}
+
+.ptsInput {
+  width: 3rem;
+}
+
+.ptsBtn {
+  margin-left: 5px;
+}
+
+.ptsList {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
